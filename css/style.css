@@ -1,0 +1,496 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Extra-Light";
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+
+@font-face {
+  font-family: "Mosk Medium";
+  src: url("../fonts/Mosk Medium 500.eot");
+  src: local("☺"), url("../fonts/Mosk Medium 500.woff") format("woff"),
+    url("../fonts/Mosk Medium 500.ttf") format("truetype"),
+    url("../fonts/Mosk Medium 500.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Extra-Light";
+  src: url("../fonts/Mosk Extra-Light 200.eot");
+  src: local("☺"), url("../fonts/Mosk Extra-Light 200.woff") format("woff"),
+    url("../fonts/Mosk Extra-Light 200.ttf") format("truetype"),
+    url("../fonts/Mosk Extra-Light 200.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  color: #231f20;
+}
+
+body.home {
+  position: relative;
+}
+
+/* body.home:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("../images/whole-thread.png") no-repeat top right;
+  z-index: 7;
+} */
+
+.wrapper {
+  width: 80%;
+}
+
+.paper-bg {
+  background: url("../images/paper-bg.jpg");
+}
+
+.mainfooter {
+  background: #231f20;
+}
+
+.main-banner .wrapper {
+  position: relative;
+  z-index: 8;
+}
+
+/* .f-products .wrapper,
+.main-banner .wrapper,
+.brands .wrapper,
+.mainfooter .wrapper {
+  position: relative;
+  z-index: 8;
+} */
+
+.main-banner .thread {
+  width: 100%;
+  height: 100%;
+  background: url(../images/hand-thread.png) no-repeat right;
+  position: absolute;
+}
+/* .f-products .thread {
+  width: 100%;
+  height: 100%;
+  background: url(../images/f-product-thread.png) no-repeat right;
+  position: absolute;
+} */
+
+/* =========== header css =========== */
+
+.app-header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding-top: 3rem;
+  z-index: 9;
+  transition: 0.5s all ease-in-out;
+  padding-bottom: 10px;
+}
+
+.main-nav ul {
+  margin: 0;
+  padding: 0;
+}
+.main-nav ul li {
+  display: inline;
+  margin: 0 2rem;
+  position: relative;
+}
+
+.main-nav ul li.active:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  background: url("../images/menu-niddle-line.png") no-repeat center;
+  background-size: 100%;
+  bottom: -15px;
+  left: 0;
+}
+
+.main-nav ul li a {
+  font-size: 1.5rem;
+  color: #231f20;
+}
+.main-nav ul li a:hover {
+  text-decoration: none;
+}
+
+/* =========== header css =========== */
+
+/* =========== Headings css =========== */
+
+.sec-heading h2 {
+  font-size: 3rem;
+  font-family: "Mosk Medium";
+}
+
+.sec-heading {
+  position: relative;
+}
+
+.white-heading:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  background: url("../images/white-heading-decor.png") no-repeat center;
+  left: 0;
+  bottom: -50px;
+  background-size: 190px;
+}
+
+.black-heading:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  background: url("../images/black-heading-decor.png") no-repeat center;
+  left: 0;
+  bottom: -50px;
+  background-size: 190px;
+}
+
+/* =========== Headings css =========== */
+
+.vh-section {
+  min-height: 100vh;
+  width: 100%;
+}
+
+.main-banner {
+  position: relative;
+}
+
+.main-banner:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.main-banner-content h1 {
+  font-size: 8rem;
+  margin: 0;
+}
+.main-banner-content h2 {
+  font-size: 4rem;
+  margin: -20px 0 0 0;
+}
+.main-banner-content .yarn-img {
+  margin-top: 3rem;
+}
+.main-banner-content .yarn-img img {
+  width: 40%;
+}
+.main-banner-content .extra-stuff {
+  font-size: 2rem;
+  padding-left: 20%;
+  margin-top: 3rem;
+}
+.main-banner-content .extra-stuff p {
+}
+
+/* =========== Featured Products css =========== */
+
+.f-products {
+  background: #231f20;
+}
+
+.featrued-products-caro {
+  padding: 0 80px;
+  margin-top: 9rem;
+}
+
+.featrued-products-caro .owl-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-top: 0 !important;
+}
+
+.featrued-products-caro .product-single .product-desc .product-title {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.featrued-products-caro .product-single .product-desc .product-title:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  background: url("../images/niddle-white.png") no-repeat center;
+  bottom: -17px;
+}
+
+.owl-theme .owl-nav [class*="owl-"]:focus {
+  outline: none;
+}
+
+.owl-theme .owl-nav [class*="owl-"]:hover {
+  background: none !important;
+  opacity: 0.5;
+}
+
+.featrued-products-caro .owl-prev {
+  position: absolute;
+  left: -30px;
+}
+.featrued-products-caro .owl-next {
+  position: absolute;
+  right: -30px;
+}
+
+.featrued-products-caro .owl-nav {
+  width: 100%;
+  height: 100px;
+  left: 0;
+  z-index: -1;
+}
+
+.view-all-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.view-all-box a {
+  position: relative;
+  padding: 10px 40px;
+  font-size: 20px;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.view-all-box a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  background: url("../images/niddle-white.png") no-repeat center;
+  left: 60%;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.5s all ease-in-out;
+}
+
+.view-all-box a:hover {
+  color: #fff;
+}
+
+.view-all-box a:hover::before {
+  left: 80%;
+}
+
+/* =========== Featured Products css =========== */
+
+/* =========== Footer Css =========== */
+
+.foot-links ul li {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.foot-links ul li a {
+  color: #fff;
+}
+
+.mainfooter .newletterform input {
+  color: #fff;
+  background: none;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #fff;
+  height: 55px;
+}
+
+.mainfooter .newletterform input:focus {
+  outline: none;
+}
+
+.mainfooter .newletterform button {
+  background: none;
+  border: 1px solid #fff;
+  text-transform: uppercase;
+  color: #fff;
+  width: 100%;
+  margin-top: 30px;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.mainfooter .newletterform button:hover {
+  background: #fff;
+  color: #000;
+}
+
+.mobile-footer-collaspe #accordion .card {
+  background: #231f20;
+}
+
+.mobile-footer-collaspe #accordion .card .card-header {
+  border-bottom: 1px solid #fff;
+}
+
+.accor-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mobile-footer-collaspe {
+  display: none;
+}
+
+.mobile-footer-collaspe #accordion {
+  border-bottom: 1px solid #fff;
+  margin: 0 0 30px 0;
+}
+/* =========== Footer Css =========== */
+.mobile-menu-open-icon {
+  width: 25px;
+  height: 25px;
+  display: none;
+  align-items: center;
+  cursor: pointer;
+}
+.mobile-menu-open-icon span {
+  display: flex;
+  position: relative;
+  width: 25px;
+  height: 2px;
+  background: #000;
+}
+
+.mobile-menu-open-icon span:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #000;
+  top: -7px;
+}
+
+.mobile-menu-open-icon span:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #000;
+  bottom: -7px;
+}
+
+.sticky-header .mobile-menu-open-icon span,
+.sticky-header .mobile-menu-open-icon span:after,
+.sticky-header .mobile-menu-open-icon span:before {
+  background: #fff;
+}
+
+.brandslist img {
+  max-width: 100%;
+}
+
+.logo-wht {
+  display: none;
+}
+.heart-wht,
+.cart-wht {
+  display: none;
+}
+
+.app-header.sticky-header .logo-wht {
+  display: block;
+}
+
+.app-header.sticky-header .logo-blck {
+  display: none;
+}
+.app-header.sticky-header .heart-wht,
+.app-header.sticky-header .cart-wht {
+  display: block;
+}
+
+.app-header.sticky-header .heart-blck,
+.app-header.sticky-header .cart-blck {
+  display: none;
+}
+
+.app-header.sticky-header {
+  transition: 0.5s all ease-in-out;
+  padding-top: 1rem;
+  background: #231f20;
+}
+
+.app-header.sticky-header .main-nav ul li a {
+  color: #fff;
+}
+
+.app-header.sticky-header .main-nav ul li.active:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  background: url(../images/niddle-white.png) no-repeat center;
+  background-size: 100%;
+  bottom: -15px;
+  left: 0;
+}
+
+.menu-close-button {
+  display: flex;
+  justify-content: flex-end;
+}
+.menu-close-button .close-btn-txt {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: 10px 30px 0px 0;
+  font-size: 25px;
+}
+.menu-close-button .close-btn-txt img {
+  width: 20px;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #231f20;
+  z-index: 10;
+  height: 100%;
+  right: -100%;
+  transition: 0.5s all ease-in-out;
+  text-align: center;
+}
+
+.mobile-menu .menu-items li {
+  font-family: "Mosk Medium";
+  border-bottom: 1px solid #3a3939;
+  list-style: none;
+}
+.mobile-menu .menu-items li a {
+  font-size: 30px;
+  color: #fff;
+  padding: 20px 0;
+  display: inline-block;
+}
+
+.innerpage {
+  padding-top: 10rem;
+}
+
+.founderlogo img {
+  max-width: 60%;
+}

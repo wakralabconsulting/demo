@@ -1,0 +1,91 @@
+@media only screen and (max-width: 1366px) {
+  .main-banner-content h1 {
+    font-size: 6rem;
+  }
+  .main-banner-content h2 {
+    font-size: 3rem;
+  }
+  .app-header {
+    padding-top: 2rem;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .view-all-box a:before {
+    display: none;
+  }
+
+  .main-banner .thread {
+    width: 100%;
+    height: 100%;
+    background: url(../images/hand-thread.png) no-repeat right;
+    position: absolute;
+    background-size: 60% 100%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .footer-social {
+    margin-top: 2rem;
+  }
+  .footer-social {
+    text-align: center;
+  }
+  .mobile-menu-open-icon {
+    display: flex;
+  }
+  .main-nav,
+  .resp-footer {
+    display: none;
+  }
+
+  .mobile-footer-collaspe {
+    display: block;
+  }
+
+  .brandslist img {
+    width: 200px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .brand-img-holder-resp {
+    text-align: center;
+    margin: 40px 0;
+  }
+}
+@media only screen and (max-width: 680px) {
+  .main-banner {
+    overflow: hidden;
+  }
+  .main-banner .thread {
+    background-size: 80% 100%;
+    right: -20%;
+  }
+
+  .main-banner .thread {
+    width: 100%;
+    height: 80%;
+    background: url(../images/mobile-thread-bg.png) no-repeat right;
+    position: absolute;
+    background-size: contain;
+    right: -50%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .vh-section.main-banner {
+    min-height: 50vh;
+    padding-top: 20vh;
+    padding-bottom: 10vh;
+  }
+
+  .main-banner-content h1 {
+    font-size: 4rem;
+  }
+  .main-banner-content h2 {
+    font-size: 2rem;
+  }
+
+  .logo img {
+    width: 40px !important;
+  }
+}
